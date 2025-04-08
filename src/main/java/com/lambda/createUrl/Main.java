@@ -18,7 +18,7 @@ public class Main implements RequestHandler<Map<String, Object>, Map<String, Str
         String body = input.get("body").toString(); // aqui vai ser o campo da url ou timestamp
         //para caso não cosga transformar nãoq uebre o sistema
         Map<String, String> bodyMap;
-        try{cre
+        try{
             bodyMap = objectMapper.readValue(body, Map.class);
 
         } catch (JsonProcessingException exception) {
