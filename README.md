@@ -12,6 +12,7 @@ Follow some information about how to do the configuration in this project. Enjoy
 - Lombok
 - AWS LAMBDA
 - JACKSON
+- S3
 
 - It is necessary to do the login at aws.amazon.com, after go to Lambda and do the configuration.
 
@@ -24,4 +25,13 @@ Follow some information about how to do the configuration in this project. Enjoy
 - Fifth: Change the Handler to the same that is on project folder.
 - Sixth: Insert into the "UPLOAD FROM" the package that you have created at Maven package
     
+# Steps to do the configuration S3
+- First: Create a Bucket at AWS S3 and do the configuration.
+- Second: Add the S3 dependency at the project
+- Third: I have done the validation into the class responsible to save the Json
+at your project, so have to check if the try/catch is working as expected.
+
+
+
+
 
